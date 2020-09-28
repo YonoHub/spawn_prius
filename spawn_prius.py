@@ -22,7 +22,7 @@ class Prius:
             )
         subprocess.Popen(
             "vglrun bash -c 'source {} && roslaunch car_demo spawn_prius.launch block_id:={} x:={} y:={} '".format(
-                workspace_path + "devel", self.block_id, x, y
+                workspace_path + "devel/setup.bash", self.block_id, x, y
             ),
             shell=True,
         )
